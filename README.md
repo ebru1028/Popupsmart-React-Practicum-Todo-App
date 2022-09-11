@@ -1,7 +1,7 @@
 # Getting Started with Create React App
 This project was started with [Create React App.](https://github.com/facebook/create-react-app)
 
-Technologies and Tools I use:
+Technologies and Tools:
 ```
 Redux
 Axios
