@@ -74,6 +74,19 @@ main{
         .Loading{
             fill: white!important;
         }
+
+        .select-theme{
+            ul{
+                li{
+                    a{
+&.active{
+    border-bottom: 1px solid white!important;
+            }
+                    }
+                }
+            }
+            
+        }
     }
 }
 
@@ -81,5 +94,5 @@ main{
 @import 'modules/_header';
 @import 'modules/_form';
 @import 'modules/todos';
-@import 'modules/updateTodoModal';
+@import 'modules/_modal';
 

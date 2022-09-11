@@ -6,7 +6,7 @@ import TodoCreateForm from '../components/todo/forms/todoCreateForm';
 import List from "../components/todo/List";
 
 import Modal from "react-modal";
-import UserCreateForm from "../components/todo/forms/userCreateForm";
+import UserCreateForm from "../components/user/form/userCreateForm";
 import ReactLoading from 'react-loading';
 
 export default function HomePage(props) {
@@ -44,10 +44,10 @@ export default function HomePage(props) {
             <div className="select-theme">
               <ul>
                 <li>
-                  <a href="javascript:;" onClick={()=> { changeTheme('dark') }}>Dark Mod</a>
+                  <a href="javascript:;" className={props.theme === 'dark' ? "active":""} onClick={()=> { changeTheme('dark') }}>Dark Mod</a>
                 </li>
                 <li>
-                  <a href="javascript:;" onClick={()=> { changeTheme('light') }}>Light Mod</a>
+                  <a href="javascript:;" className={props.theme === 'light' ? "active":""} onClick={()=> { changeTheme('light') }}>Light Mod</a>
                 </li>
               </ul>
 

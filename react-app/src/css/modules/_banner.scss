@@ -38,6 +38,9 @@
                             color: #6e6e6e;
                             padding: 3px 5px;
     
+                            &.active{
+                                border-bottom: 1px solid black;
+                            }
                         }
                     }
                 }

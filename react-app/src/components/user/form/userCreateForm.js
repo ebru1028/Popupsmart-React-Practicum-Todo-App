@@ -3,7 +3,7 @@ import { useFormik } from "formik";
 import validationSchema from "./userCreateValidation";
 import ReactLoading from "react-loading";
 
-export default function TodoCreateForm({closeModal}) {
+export default function TodoCreateForm({ closeModal }) {
   const [loadingIsOpen, setLoadingIsOpen] = React.useState(false);
 
   const { handleSubmit, handleChange, handleBlur, values, errors, touched } =
@@ -13,7 +13,7 @@ export default function TodoCreateForm({closeModal}) {
       },
       onSubmit: async (values) => {
         setLoadingIsOpen(true);
-        localStorage.setItem('user', values.name);
+        localStorage.setItem("user", values.name);
         setLoadingIsOpen(false);
         closeModal();
       },
@@ -22,8 +22,12 @@ export default function TodoCreateForm({closeModal}) {
 
   return (
     <>
-      <form onSubmit={handleSubmit}>
-        <div className="inner">
+      <div className="inner">
+        <div className="title">
+          <h1>Create User</h1>
+        </div>
+
+        <form onSubmit={handleSubmit}>
           <div className="form-group">
             <input
               placeholder="Name"
@@ -38,22 +42,22 @@ export default function TodoCreateForm({closeModal}) {
           </div>
 
           {!loadingIsOpen && (
-            <button className="submit-btn" type="submit">
-              Login
-            </button>
-          )}
+          <button className="submit-btn" type="submit">
+            Login
+          </button>
+        )}
+        </form>
 
-          {loadingIsOpen && (
-            <ReactLoading
-              className="Loading"
-              type={"spin"}
-              color={"black"}
-              height={"30px"}
-              width={"30px"}
-            />
-          )}
-        </div>
-      </form>
+        {loadingIsOpen && (
+          <ReactLoading
+            className="Loading"
+            type={"spin"}
+            color={"black"}
+            height={"30px"}
+            width={"30px"}
+          />
+        )}
+      </div>
     </>
   );
 }

@@ -106,6 +106,7 @@ export default function List() {
       </div>
 
       <Modal isOpen={modalIsOpen} onRequestClose={closeModal}>
+      <a onClick={closeModal} style={{float: 'right', cursor: 'pointer'}}>X</a>
         {selectedTodoItem != undefined && (
           <TodoUpdateForm todoItem={selectedTodoItem} />
         )}

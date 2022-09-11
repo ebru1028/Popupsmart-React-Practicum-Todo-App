@@ -10,7 +10,7 @@ function App() {
   return (
     <>
        <Layout theme={theme}>
-        <HomePage setTheme={setTheme} />
+        <HomePage theme={theme} setTheme={setTheme} />
       </Layout>
     </>
   );

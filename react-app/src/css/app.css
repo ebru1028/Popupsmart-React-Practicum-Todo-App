@@ -38,6 +38,9 @@ main.dark input, main.dark button {
 main.dark .Loading {
   fill: white !important;
 }
+main.dark .select-theme ul li a.active {
+  border-bottom: 1px solid white !important;
+}
 
 .banner .wrapper {
   width: 100%;
@@ -76,6 +79,9 @@ main.dark .Loading {
   font-size: 14px;
   color: #6e6e6e;
   padding: 3px 5px;
+}
+.banner .wrapper .inner .select-theme ul li a.active {
+  border-bottom: 1px solid black;
 }
 .banner .wrapper .inner .select-theme .user-information a {
   text-decoration: none;
