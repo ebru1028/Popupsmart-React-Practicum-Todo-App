@@ -1,0 +1,50 @@
+.todos{
+    .wrapper {
+        width: 100%;
+        max-width: 1232px;
+        padding: 25px 15px;
+        margin: 0 auto;
+        display: flex;
+        justify-content: center;
+
+        .inner{
+            max-width: 480px;
+            width: 100%;
+            margin: 0 auto;
+
+            .items{
+                width: 100%;
+
+                .item{
+                    display: flex;
+                    justify-content: space-between;
+                    border-bottom: 1px solid #e1dede;
+                    padding: 12px 10px;
+                    font-weight: bold;
+                    color: #827f7f;
+                    display: flex;
+
+                    .inner{
+                        
+                        label{
+
+                            &.completed{
+                                text-decoration:line-through;
+                            }
+                        }
+                    }
+
+                    .settings{
+                        display: flex;
+                        i{
+                            color: black;
+                            padding: 0 3px;
+                          }
+
+                    }
+                }
+            }
+
+        }
+    }
+}

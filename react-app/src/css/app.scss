@@ -1,0 +1,85 @@
+/* BREAKPOINTS START */
+
+$screen-sm-max: 576px;
+
+$screen-md-max: 768px;
+
+$screen-lg-max: 1200px;
+
+@mixin sm {
+    @media (max-width: #{$screen-sm-max}) {
+        @content;
+    }
+}
+
+@mixin md {
+    @media (max-width: #{$screen-md-max}) {
+        @content;
+    }
+}
+
+@mixin lg {
+    @media (max-width: #{$screen-lg-max}) {
+        @content;
+    }
+}
+
+@mixin rwd($screen) {
+    @media (max-width: $screen + 'px') {
+        @content;
+    }
+}
+
+/* BREAKPOINTS END */
+
+@font-face {
+    font-family: 'Roboto Sans Serif';
+    src: local('Roboto Sans Serif'), url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;800&display=swap') format('truetype');
+  }
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    padding: 0;
+    margin: 0;
+}
+
+main{
+    height: 100vh;
+    display: block;
+    &.light{
+        background-color: #fafafa;
+    }
+
+    &.dark{
+        background-color: #0E2038;
+
+        h1,h2,h3,h4,h5,h6{
+            color: white !important;
+        }
+
+        a, label, i{
+            color: white !important;
+        }
+
+        input, button{
+            background: #0e2038;
+    border: 1px solid white;
+    color: white !important;
+        }
+
+        .Loading{
+            fill: white!important;
+        }
+    }
+}
+
+@import 'modules/_banner';
+@import 'modules/_header';
+@import 'modules/_form';
+@import 'modules/todos';
+@import 'modules/updateTodoModal';
+

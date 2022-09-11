@@ -1,0 +1,50 @@
+.form {
+    .wrapper {
+        width: 100%;
+        max-width: 1232px;
+        padding: 0px 15px;
+        margin: 0 auto;
+        display: flex;
+        justify-content: center;
+
+        form {
+            display: flex;
+            width: 100%;
+           
+            .inner{
+                max-width: 480px;
+                width: 100%;
+                margin: 0 auto;
+                display: flex;
+                justify-content: space-between;
+                align-items: baseline;
+
+                .form-group {
+                    display: grid;
+                    width: 100%;
+                    align-items: center;
+    
+                    input {
+                        width: 100%;
+                        padding: 10px 10px;
+                        margin-bottom: 10px;
+                    }
+    
+                    .error {
+                        color: red;
+                        font-size: 12px;
+                        left: 0;
+                        bottom: 0;
+                    }
+                }
+
+                .submit-btn{
+                    padding: 10px 20px;
+                    color: gray;
+                    border: 2px solid gray;
+                }
+
+            }
+        }
+    }
+}

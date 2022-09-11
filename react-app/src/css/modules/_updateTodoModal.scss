@@ -1,0 +1,57 @@
+.ReactModal__Overlay {
+    max-width: 480px;
+    width: 100%;
+    height: 400px;
+    margin: 0 auto;
+
+    .ReactModal__Content {
+        .inner {
+            .title {
+                display: flex;
+                justify-content: center;
+
+                h1 {
+                    font-size: 18px;
+                    font-weight: bold;
+                    color: #298029;
+                }
+            }
+
+            form {
+                width: 100%;
+                padding: 40px 20px;
+
+                .form-group {
+                    margin-bottom: 10px;
+
+                    input,
+                    select {
+                        width: 100%;
+                        padding: 10px 10px;
+                        border: 1px solid #298029;
+                    }
+
+                    .error {
+                        color: crimson;
+                        font-size: 12px;
+                    }
+
+                }
+
+                button {
+                    width: 100%;
+                    padding: 10px 10px;
+                    border: 1px solid #298029;
+                    color: #298029;
+                    font-weight: bold;
+                    font-size: 14px;
+                }
+
+                .Loading {
+                    margin: 0 auto;
+                }
+            }
+
+        }
+    }
+}

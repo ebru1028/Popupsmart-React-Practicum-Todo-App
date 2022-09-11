@@ -1,0 +1,26 @@
+.header{
+    .wrapper{
+        width: 100%;
+        max-width: 1232px;
+        padding: 25px 15px;
+        margin: 0 auto;
+        display: flex;
+        justify-content: center;
+        
+        .inner{
+            width: 100%;
+            display: block;
+            text-align: center;
+
+            .title{
+                font-weight: bold;
+                font-size: 36px;
+                margin-bottom: 15px;
+                color: #6e6e6e;
+                font-style: italic;
+            }
+            
+        }
+       
+    }
+}
